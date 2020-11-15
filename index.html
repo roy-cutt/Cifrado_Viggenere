@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Viggenere</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <font face="Comic Sans MS">
+    <header><h1>Cifrado Viggenere</h1></header>
+    <div class="contenedor">
+
+        <div class="center-block" >
+            <article class="datos">
+                <p><h3>Texto a cifrar/descifrar</h3></p>
+                <br>
+                <p><input type="text" id="txtC"></p>
+                <br>
+                <p><input class="btn btn-info" type="button" value="Cifrar" onclick= "longitudCifrar() ">
+                <input class="btn btn-info" type="button" value="Descifrar" onclick= "longitudDescifrar() " >
+                <input class="btn btn-info" type="button" value="Reiniciar" onclick="reiniciar() " > 
+                </p>
+                <p><h3>Por favor ingrese la palabra clave</h3></p>
+                <br>
+                <p><input type="text" name="posicionamiento" id="txtClave"
+                onpaste="return false;" ondrop="return false;" min="0"></p>
+            
+                <p><h3>Texto cifrado/descifado</h3></p>
+                <br>
+                    <textarea id="res" onpaste="return false;" ondrop="return false;"></textarea>
+                <br>
+                <p><input class="btn btn-info" type="button" value="Copiar" onclick="colocar()">
+                </p>
+
+            </article>                      
+        </div>
+
+    </div>
+    <script src="js/vigi.js"></script>
+</font>
+</body>
+</html>
